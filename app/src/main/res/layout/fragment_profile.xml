@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/exit_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_clear_24"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name Surname"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_email_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/email_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="gmail.com"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_password_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_lock_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Change password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img3" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_phone_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_smartphone_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Change phone number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img4" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/payment_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_credit_card_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Payment method"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img5" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/address_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img6" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

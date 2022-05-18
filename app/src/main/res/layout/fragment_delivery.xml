@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.DeliveryFragment">
+
+    <TextView
+        android:id="@+id/text33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Your deliveries!"
+        android:textColor="@color/dark_green"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/text33"
+        android:id="@+id/delivery_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/yellow"/>
+
+</RelativeLayout>
